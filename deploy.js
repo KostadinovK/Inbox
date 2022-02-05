@@ -1,11 +1,10 @@
+//There was some problem with the deployment, it was fixed by setting the version of the truffle/hdwallet-provider package to 2.0.0
 const HDWalletProvider = require('@truffle/hdwallet-provider');
 const Web3 = require('web3');
 const { abi, bytecode } = require('./compile');
 
 const MetamaskMnemonic = 'violin utility spoil left cream milk pigeon rocket vapor hospital add jeans';
 const InfuraEndpoint = 'https://ropsten.infura.io/v3/6986ea39d6ac482daab70c0184fb5a05';
-
-//There is a problem with the deployment, it was fixed by setting the version of the truffle/hdwallet-provider package to 1.5.1
 
 const provider = new HDWalletProvider(MetamaskMnemonic, InfuraEndpoint);
 
